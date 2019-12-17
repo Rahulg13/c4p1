@@ -2,6 +2,8 @@ elec <- readLines("household_power_consumption.txt")
 
 library(stringr)
 library(chron)
+library(lubridate)
+
 col1 <- elec[1]
 col1 <- str_split_fixed(col1, ";", 9)
 elec <- elec[2:length(elec)]
