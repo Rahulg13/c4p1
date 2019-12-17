@@ -26,7 +26,7 @@ elec2 <- subset(elec, (Date == as.Date("2007-02-01")) | (Date == as.Date("2007-0
 #Plot 2
 
 #opening file
-png(file = "Plot2.png")
+png(file = "Plot2.png", width = 480, height = 480)
 
 #Plotting the graph
 datetime <- with(elec2, ymd(Date) + hms(Time))

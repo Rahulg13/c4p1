@@ -27,7 +27,7 @@ elec2 <- subset(elec, (Date == as.Date("2007-02-01")) | (Date == as.Date("2007-0
 #Plot 1 
 
 #opening file
-png(file = "Plot1.png")
+png(file = "Plot1.png", width = 480, height = 480)
 
 #Plotting the graph
 with(elec2, hist(Global_active_power, col = "red", xlab = "Global Active Power (kilowatts)", main = "Global Active Power"))

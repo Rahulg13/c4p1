@@ -27,7 +27,7 @@ elec2 <- subset(elec, (Date == as.Date("2007-02-01")) | (Date == as.Date("2007-0
 #Plot 4
 
 #opening file
-png(file = "Plot4.png")
+png(file = "Plot4.png", width = 480, height = 480)
 
 #Setting the grid
 par(mfrow = c(2,2))
